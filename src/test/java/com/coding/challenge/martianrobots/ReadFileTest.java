@@ -35,4 +35,16 @@ public class ReadFileTest {
     }
 
 
+    @Test
+    public void testGridSetup() throws IOException {
+        String inputFile = "src/test/resources/sampleInput.txt";
+
+        CreateGridBasedonInput createGridBasedonInput = new CreateGridBasedonInput(inputFile);
+
+        InstructionExecution instructionExecution = createGridBasedonInput.generateInitialSetUp();
+
+        String strOutput = instructionExecution.initiateExecution();
+
+        System.out.println(strOutput);
+    }
 }
