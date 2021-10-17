@@ -28,7 +28,7 @@ public class ReadFileTest {
 
         String currentLine = bufferedReader.readLine();
 
-        System.out.println("robot initial state is ::: " + currentLine);
+        //System.out.println("robot initial state is ::: " + currentLine);
         assertNotNull(currentLine);
         assertEquals("1 1 E", currentLine);
         assertEquals("5 3", gridBoundsString);

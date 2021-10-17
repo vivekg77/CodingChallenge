@@ -35,7 +35,7 @@ public class CreateGridBasedonInput {
     String gridBoundsString;
 
     if ((gridBoundsString = bufferedReader.readLine()) != null) {
-      System.out.println("grid Bounds are ::: " + gridBoundsString);
+      //System.out.println("grid Bounds are ::: " + gridBoundsString);
       gridBounds = generateGrid(gridBoundsString);
     }
 
@@ -45,9 +45,9 @@ public class CreateGridBasedonInput {
     while ((currentLine = bufferedReader.readLine()) != null) {
       if (!currentLine.isEmpty()) {
         String initialRobotStatus = currentLine;
-        System.out.println("initialRobotStatus ::: " + initialRobotStatus);
+        //System.out.println("initialRobotStatus ::: " + initialRobotStatus);
         String instructions = bufferedReader.readLine();
-        System.out.println("instructions ::: " + instructions);
+        //System.out.println("instructions ::: " + instructions);
         RobotStatus rs = setRobotInitialPosition(initialRobotStatus);
         rs.addInstructions(generateInstructionQueue(instructions));
         robotStatuses.add(rs);
@@ -62,7 +62,7 @@ public class CreateGridBasedonInput {
   // a Linked List
   private Queue<RobotInstruction> generateInstructionQueue(String instructions) {
 
-    System.out.println("instructions are ::: " + instructions);
+    //System.out.println("instructions are ::: " + instructions);
     Queue<RobotInstruction> instructionQueue = new LinkedList<>();
 
     for (char c : instructions.toCharArray()) {
