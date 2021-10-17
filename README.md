@@ -28,7 +28,7 @@ It takes the input file and generates the desired output.
 2 3 S
 
 Clone the following repository:
-
+https://github.com/vivekg77/CodingChallenge
 
 
 
